@@ -1,0 +1,4 @@
+green: #8E9C82
+red: #C72C3D
+slate: #55637C
+yellow: #E8B24E
