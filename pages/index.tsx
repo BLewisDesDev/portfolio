@@ -29,14 +29,13 @@ export default function Home() {
 							<Image
 								src={gif}
 								alt="gif"
-								loading="eager"
 								quality={100}
 								onLoadingComplete={(e) => setisIntroReady(true)}
 							/>
 						</motion.div>
-						<div className="absolute inset-0 flex justify-center items-center z-10">
-							{/* This should be the content */}
 
+						{/* Content */}
+						<div className="absolute inset-0 flex justify-center items-center z-10">
 							{isIntroReady && (
 								<motion.div
 									initial={{ opacity: 0 }}
