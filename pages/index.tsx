@@ -36,7 +36,7 @@ export default function Home() {
 
 						{/* Content */}
 						<div className="absolute inset-0 flex justify-center items-center z-10">
-							{!isIntroReady && <div>loading</div>}
+							{/* {!isIntroReady && <div>loading</div>} */}
 
 							{isIntroReady && (
 								<motion.div
