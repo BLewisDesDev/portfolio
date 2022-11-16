@@ -5,12 +5,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 export default function Home() {
-	const [isImageReady, setIsImageReady] = useState(false);
-
-	// const onLoadCallBack = (e: any) => {
-	// 	setIsImageReady(true);
-	// 	typeof onLoad === "function" && onLoad(e);
-	// };
+	const [isIntroReady, setisIntroReady] = useState(false);
+	// const [showContent, setShowContent] = useState(false);
 
 	return (
 		<div>
@@ -30,18 +26,26 @@ export default function Home() {
 							animate={{ opacity: 0 }}
 							transition={{ duration: 0.5, delay: 2.8 }}
 						>
-							<Image src={gif} alt="gif" loading="eager" />
+							<Image
+								src={gif}
+								alt="gif"
+								loading="eager"
+								quality={100}
+								onLoadingComplete={(e) => setisIntroReady(true)}
+							/>
 						</motion.div>
 						<div className="absolute inset-0 flex justify-center items-center z-10">
 							{/* This should be the content */}
 
-							<motion.div
-								initial={{ opacity: 0 }}
-								animate={{ opacity: 1 }}
-								transition={{ duration: 0.5, delay: 2.8 }}
-							>
-								<p>Hey</p>
-							</motion.div>
+							{isIntroReady && (
+								<motion.div
+									initial={{ opacity: 0 }}
+									animate={{ opacity: 1 }}
+									transition={{ duration: 0.5, delay: 2.8 }}
+								>
+									<p>Hey</p>
+								</motion.div>
+							)}
 						</div>
 					</div>
 				</div>
