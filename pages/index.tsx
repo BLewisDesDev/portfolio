@@ -2,8 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import gif from "../public/PortfolioSite.gif";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Home() {
+	const [isImageReady, setIsImageReady] = useState(false);
+
+	// const onLoadCallBack = (e: any) => {
+	// 	setIsImageReady(true);
+	// 	typeof onLoad === "function" && onLoad(e);
+	// };
+
 	return (
 		<div>
 			<Head>
@@ -22,7 +30,7 @@ export default function Home() {
 							animate={{ opacity: 0 }}
 							transition={{ duration: 0.5, delay: 2.8 }}
 						>
-							<Image src={gif} alt="gif"></Image>
+							<Image src={gif} alt="gif" loading="eager" />
 						</motion.div>
 						<div className="absolute inset-0 flex justify-center items-center z-10">
 							{/* This should be the content */}
