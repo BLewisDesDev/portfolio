@@ -16,7 +16,7 @@ export const Nav = () => {
 							title="Our product"
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
-							Bio
+							About Me
 						</Link>
 					</li>
 					<li>
@@ -50,7 +50,7 @@ export const Nav = () => {
 						src="/ByronLewisDotDevLogo.png"
 						alt="Logo"
 						width={75}
-						height={75}
+						height={55}
 						className="rounded"
 					/>
 				</Link>
@@ -72,7 +72,7 @@ export const Nav = () => {
 							title="Sign in"
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
-							Youtube
+							Linked In
 						</Link>
 					</li>
 					<li>
@@ -119,7 +119,7 @@ export const Nav = () => {
 											title="Company"
 											className="inline-flex items-center"
 										>
-											<svg
+											{/* <svg
 												className="w-8 text-brand-bred"
 												viewBox="0 0 24 24"
 												strokeLinejoin="round"
@@ -135,8 +135,8 @@ export const Nav = () => {
 												<rect x="14" y="11" width="7" height="12" />
 											</svg>
 											<span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-												Company
-											</span>
+												Byron Lewis Dot Dev
+											</span> */}
 										</Link>
 									</div>
 									<div>
@@ -164,7 +164,7 @@ export const Nav = () => {
 												title="Our product"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 											>
-												Product
+												About Me
 											</Link>
 										</li>
 										<li>
@@ -174,7 +174,7 @@ export const Nav = () => {
 												title="Our product"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 											>
-												Features
+												Portfolio
 											</Link>
 										</li>
 										<li>
@@ -184,7 +184,7 @@ export const Nav = () => {
 												title="Product pricing"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 											>
-												Pricing
+												Resume
 											</Link>
 										</li>
 										<li>
@@ -194,7 +194,7 @@ export const Nav = () => {
 												title="About us"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 											>
-												About us
+												Github
 											</Link>
 										</li>
 										<li>
@@ -204,7 +204,7 @@ export const Nav = () => {
 												title="Sign in"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 											>
-												Sign in
+												Linked In
 											</Link>
 										</li>
 										<li>
@@ -214,7 +214,7 @@ export const Nav = () => {
 												aria-label="Sign up"
 												title="Sign up"
 											>
-												Sign up
+												Contact
 											</Link>
 										</li>
 									</ul>

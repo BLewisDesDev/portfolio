@@ -342,9 +342,10 @@ module.exports = {
 			},
 			scale: {
 				30: ".3",
+				60: ".6",
 			},
 			boxShadow: {
-				outline: "0 0 0 3px rgba(101, 31, 255, 0.4)",
+				outline: "0 0 0 3px rgba(199,44,61, 0.4)",
 			},
 		},
 	},

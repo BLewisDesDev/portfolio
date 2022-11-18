@@ -2,13 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import gif from "../public/PortfolioSite.gif";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 import { Nav } from "../components/Nav";
-// import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
+import { Portfolio } from "../components/portfolio";
+import { Footer } from "../components/Footer";
 
 export default function Home() {
 	const [isIntroReady, setisIntroReady] = useState(false);
+	useEffect(() => {}, []);
 	return (
 		<div>
 			<Head>
@@ -44,6 +47,9 @@ export default function Home() {
 								>
 									<Nav />
 									<Hero />
+
+									{/* <Portfolio /> */}
+									{/* <Footer /> */}
 								</motion.div>
 							)}
 						</div>
