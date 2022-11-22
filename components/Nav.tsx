@@ -12,8 +12,8 @@ export const Nav = () => {
 					<li>
 						<Link
 							href="/"
-							aria-label="Our product"
-							title="Our product"
+							aria-label="About Me"
+							title="About Me"
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
 							About Me
@@ -22,8 +22,8 @@ export const Nav = () => {
 					<li>
 						<Link
 							href="/"
-							aria-label="Our product"
-							title="Our product"
+							aria-label="Portfolio"
+							title="Portfolio"
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
 							Portfolio
@@ -32,18 +32,18 @@ export const Nav = () => {
 					<li>
 						<Link
 							href="/"
-							aria-label="Product pricing"
-							title="Product pricing"
+							aria-label="Resumé"
+							title="Resumé"
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
-							Resume
+							Resumé
 						</Link>
 					</li>
 				</ul>
 				<Link
 					href="/"
-					aria-label="Company"
-					title="Company"
+					aria-label="ByronLewisDotDev"
+					title="ByronLewisDotDev"
 					className="inline-flex items-center"
 				>
 					<Image
@@ -58,8 +58,8 @@ export const Nav = () => {
 					<li>
 						<Link
 							href="/"
-							aria-label="About us"
-							title="About us"
+							aria-label="Github"
+							title="Github"
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
 							Github
@@ -68,18 +68,18 @@ export const Nav = () => {
 					<li>
 						<Link
 							href="/"
-							aria-label="Sign in"
-							title="Sign in"
+							aria-label="LinkedIn"
+							title="LinkedIn"
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
-							Linked In
+							LinkedIn
 						</Link>
 					</li>
 					<li>
 						<Link
 							href="/"
-							aria-label="Sign up"
-							title="Sign up"
+							aria-label="Contact"
+							title="Contact"
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
 							Contact
@@ -109,35 +109,16 @@ export const Nav = () => {
 						</svg>
 					</button>
 					{isMenuOpen && (
-						<div className="absolute top-0 left-0 w-full">
+						<div className="absolute top-0 left-0 z-50 w-full">
 							<div className="p-5 bg-white border rounded shadow-sm">
 								<div className="flex items-center justify-between mb-4">
 									<div>
 										<Link
 											href="/"
-											aria-label="Company"
-											title="Company"
+											aria-label="ByronLewisDotDev"
+											title="ByronLewisDotDev"
 											className="inline-flex items-center"
-										>
-											{/* <svg
-												className="w-8 text-brand-bred"
-												viewBox="0 0 24 24"
-												strokeLinejoin="round"
-												strokeWidth="2"
-												strokeLinecap="round"
-												strokeMiterlimit="10"
-												stroke="currentColor"
-												fill="none"
-											>
-												<rect x="3" y="1" width="7" height="12" />
-												<rect x="3" y="17" width="7" height="6" />
-												<rect x="14" y="1" width="7" height="6" />
-												<rect x="14" y="11" width="7" height="12" />
-											</svg>
-											<span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-												Byron Lewis Dot Dev
-											</span> */}
-										</Link>
+										></Link>
 									</div>
 									<div>
 										<button
@@ -160,8 +141,8 @@ export const Nav = () => {
 										<li>
 											<Link
 												href="/"
-												aria-label="Our product"
-												title="Our product"
+												aria-label="About Me"
+												title="About Me"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 											>
 												About Me
@@ -170,8 +151,8 @@ export const Nav = () => {
 										<li>
 											<Link
 												href="/"
-												aria-label="Our product"
-												title="Our product"
+												aria-label="Portfolio"
+												title="Portfolio"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 											>
 												Portfolio
@@ -180,18 +161,18 @@ export const Nav = () => {
 										<li>
 											<Link
 												href="/"
-												aria-label="Product pricing"
-												title="Product pricing"
+												aria-label="Resumé"
+												title="Resumé"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 											>
-												Resume
+												Resumé
 											</Link>
 										</li>
 										<li>
 											<Link
 												href="/"
-												aria-label="About us"
-												title="About us"
+												aria-label="Github"
+												title="Github"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 											>
 												Github
@@ -200,19 +181,19 @@ export const Nav = () => {
 										<li>
 											<Link
 												href="/"
-												aria-label="Sign in"
-												title="Sign in"
+												aria-label="LinkedIn"
+												title="LinkedIn"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 											>
-												Linked In
+												LinkedIn
 											</Link>
 										</li>
 										<li>
 											<Link
 												href="/"
 												className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-brand-bred hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-												aria-label="Sign up"
-												title="Sign up"
+												aria-label="Contact"
+												title="Contact"
 											>
 												Contact
 											</Link>

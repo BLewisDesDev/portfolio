@@ -34,6 +34,7 @@ export default function Home() {
 								alt="gif"
 								quality={100}
 								onLoadingComplete={(e) => setisIntroReady(true)}
+								className="z-0 object-cover w-full h-screen"
 							/>
 						</motion.div>
 
@@ -48,7 +49,7 @@ export default function Home() {
 									<Nav />
 									<Hero />
 
-									{/* <Portfolio /> */}
+									<Portfolio />
 									{/* <Footer /> */}
 								</motion.div>
 							)}

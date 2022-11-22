@@ -1,22 +1,4 @@
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-// 	content: [
-// 		"./app/**/*.{js,ts,jsx,tsx}",
-// 		"./pages/**/*.{js,ts,jsx,tsx}",
-// 		"./components/**/*.{js,ts,jsx,tsx}",
-// 	],
-// 	theme: {
-// 		extend: {
-// 			colors: {
-// 				"b-green": "#8E9C82",
-// 				"b-red": "#C72C3D",
-// 				"b-blue": "#55637C",
-// 				"b-yellow": "#E8B24E",
-// 			},
-// 		},
-// 	},
-// 	plugins: [],
-// };
+/** @type {import('tailwindcss').Config} */
 
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
@@ -326,6 +308,7 @@ module.exports = {
 				brand: {
 					bgreen: "#8E9C82",
 					bred: "#C72C3D",
+					bred600: "#9f2331",
 					bblue: "#55637C",
 					byellow: "#E8B24E",
 				},
@@ -357,3 +340,53 @@ module.exports = {
 	},
 	plugins: [],
 };
+
+// Tailwind Generated color pallet from brand colors
+// command: cmd+k +g
+// Green: {
+//   100: "#e8ebe6",
+//   200: "#d2d7cd",
+//   300: "#bbc4b4",
+//   400: "#a5b09b",
+//   500: "#8e9c82", // brand Green
+//   600: "#727d68",
+//   700: "#555e4e",
+//   800: "#393e34",
+//   900: "#1c1f1a"
+// },
+
+// Red: {
+//   100: "#f4d5d8",
+//   200: "#e9abb1",
+//   300: "#dd808b",
+//   400: "#d25664",
+//   500: "#c72c3d", // brand Red
+//   600: "#9f2331",
+//   700: "#771a25",
+//   800: "#501218",
+//   900: "#28090c"
+// },
+
+// Blue: {
+//   100: "#dde0e5",
+//   200: "#bbc1cb",
+//   300: "#99a1b0",
+//   400: "#778296",
+//   500: "#55637c", // brand Blue
+//   600: "#444f63",
+//   700: "#333b4a",
+//   800: "#222832",
+//   900: "#111419"
+// },
+
+// Yellow: {
+//   100: "#faf0dc",
+//   200: "#f6e0b8",
+//   300: "#f1d195",
+//   400: "#edc171",
+//   500: "#e8b24e", // brand Yellow
+//   600: "#ba8e3e",
+//   700: "#8b6b2f",
+//   800: "#5d471f",
+//   900: "#2e2410"
+// },
