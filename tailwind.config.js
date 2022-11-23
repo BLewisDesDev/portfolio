@@ -309,7 +309,7 @@ module.exports = {
 					bgreen: "#8E9C82",
 					bred: "#C72C3D",
 					bred600: "#9f2331",
-					bblue: "#55637C",
+					bblue: "#54627B",
 					byellow: "#E8B24E",
 				},
 			},

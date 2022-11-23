@@ -1,13 +1,12 @@
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
-import gif from "../public/PortfolioSite.gif";
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-
 import { Nav } from "../components/Nav";
 import { Hero } from "../components/Hero";
 import { Portfolio } from "../components/Portfolio";
 import { Footer } from "../components/Footer";
+import gif from "../public/PortfolioSite.gif";
 
 export default function Home() {
 	const [isIntroReady, setisIntroReady] = useState(false);
@@ -22,8 +21,8 @@ export default function Home() {
 
 			<main>
 				<div className="flex justify-center w-full h-screen">
-					{/* Gif div */}
 					<div className="relative z-0">
+						{/* Gif div */}
 						<motion.div
 							initial={{ opacity: 1 }}
 							animate={{ opacity: 0 }}
@@ -48,9 +47,8 @@ export default function Home() {
 								>
 									<Nav />
 									<Hero />
-
 									<Portfolio />
-									{/* <Footer /> */}
+									<Footer />
 								</motion.div>
 							)}
 						</div>
