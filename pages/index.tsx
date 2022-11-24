@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
@@ -28,13 +28,15 @@ export default function Home() {
 							animate={{ opacity: 0 }}
 							transition={{ duration: 0.2, delay: 2.8 }}
 						>
-							<Image
-								src={gif}
-								alt="gif"
-								quality={100}
-								onLoadingComplete={(e) => setisIntroReady(true)}
-								className="z-0 object-cover w-full h-screen"
-							/>
+							<Suspense fallback={<p>Loading...</p>}>
+								<Image
+									src={gif}
+									alt="gif"
+									quality={100}
+									onLoadingComplete={(e) => setisIntroReady(true)}
+									className="z-0 object-cover w-full h-screen"
+								/>
+							</Suspense>
 						</motion.div>
 
 						{/* Content */}

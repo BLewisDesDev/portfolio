@@ -307,10 +307,24 @@ module.exports = {
 				},
 				brand: {
 					bgreen: "#8E9C82",
+					bgreen600: "#727d68",
+					bgreen700: "#555e4e",
+					bgreen800: "#393e34",
+
 					bred: "#C72C3D",
 					bred600: "#9f2331",
+					bred700: "#771a25",
+					bred800: "#501218",
+
 					bblue: "#54627B",
+					bblue600: "#444f63",
+					bblue700: "#333b4a",
+					bblue800: "#222832",
+
 					byellow: "#E8B24E",
+					byellow600: "#ba8e3e",
+					byellow700: "#8b6b2f",
+					byellow800: "#5d471f",
 				},
 			},
 			spacing: {
