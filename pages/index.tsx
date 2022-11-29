@@ -7,9 +7,11 @@ import { Hero } from "../components/Hero";
 import { Portfolio } from "../components/Portfolio";
 import { Footer } from "../components/Footer";
 import gif from "../public/PortfolioSite.gif";
+import { useRouter } from "next/router";
 
 export default function Home() {
 	const [isIntroReady, setisIntroReady] = useState(false);
+	const Router = useRouter();
 	useEffect(() => {}, []);
 	return (
 		<div>
