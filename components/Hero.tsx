@@ -7,9 +7,9 @@ export const Hero = () => {
 	return (
 		<div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
 			<motion.div
-			// initial={{ x: 1000 }}
-			// animate={{ x: 0 }}
-			// transition={{ duration: 0.3, delay: 2.8, ease: "easeIn" }}
+				initial={{ x: 1000 }}
+				animate={{ x: 0 }}
+				transition={{ duration: 0.3, delay: 0.4, ease: "easeIn" }}
 			>
 				<div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
 					<svg
@@ -31,7 +31,7 @@ export const Hero = () => {
 			<motion.div
 				initial={{ x: -1000 }}
 				animate={{ x: 0 }}
-				transition={{ duration: 0.2, delay: 2.8, ease: "easeIn" }}
+				transition={{ duration: 0.2, delay: 0.2, ease: "easeIn" }}
 			>
 				<div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
 					<div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">

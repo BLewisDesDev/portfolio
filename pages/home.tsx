@@ -24,11 +24,7 @@ export default function Home() {
 					<div className="flex justify-center w-full h-screen">
 						<div className="relative z-0">
 							{/* Gif div */}
-							<motion.div
-								initial={{ opacity: 1 }}
-								animate={{ opacity: 0 }}
-								transition={{ duration: 0.2, delay: 2.8 }}
-							>
+							<motion.div initial={{ opacity: 0 }}>
 								<Suspense fallback={<p>Loading...</p>}>
 									<Image
 										src={gif}
@@ -46,7 +42,7 @@ export default function Home() {
 									<motion.div
 										initial={{ opacity: 0 }}
 										animate={{ opacity: 1 }}
-										transition={{ duration: 0.2, delay: 2.8 }}
+										transition={{ duration: 0.2 }}
 									>
 										<Nav />
 										<Hero />
