@@ -102,7 +102,7 @@ export const Portfolio = () => {
 					</div>
 					<div className="text-center">
 						<Link
-							href="/"
+							href="https://github.com/BLewisDesDev"
 							aria-label=""
 							className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-brand-bred"
 						>
