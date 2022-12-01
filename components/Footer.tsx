@@ -1,13 +1,17 @@
 import React from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import {
+	RiCreativeCommonsFill,
+	RiCreativeCommonsByFill,
+	RiCreativeCommonsSaFill,
+} from "react-icons/ri";
 
 export const Footer = () => {
 	return (
 		<>
 			<section>
-				<div className="relative mt-16 bg-brand-bblue700">
+				{/* <div className="relative mt-16 bg-brand-bblue700">
 					<svg
 						className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-brand-bblue700"
 						preserveAspectRatio="none"
@@ -37,18 +41,16 @@ export const Footer = () => {
 								</Link>
 								<div className="mt-4 lg:max-w-sm">
 									<p className="text-sm text-deep-purple-50">
-										{/* Sed ut perspiciatis unde omnis iste natus error sit
-										voluptatem accusantium doloremque laudantium, totam rem
-										aperiam. */}
+										Thanks for stopping by, Keep up with my latest projects
+										here.
 									</p>
 									<p className="mt-4 text-sm text-deep-purple-50">
-										{/* Eaque ipsa quae ab illo inventore veritatis et quasi
-										architecto beatae vitae dicta sunt explicabo. */}
+										Say hello on the contact page if you want to get in touch!
 									</p>
 								</div>
 							</div>
 							<div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
-								{/* <div>
+								<div>
 									<p className="font-semibold tracking-wide text-brand-byellow">
 										Category
 									</p>
@@ -86,8 +88,8 @@ export const Footer = () => {
 											</Link>
 										</li>
 									</ul>
-								</div> */}
-								{/* <div>
+								</div>
+								<div>
 									<p className="font-semibold tracking-wide text-brand-byellow">
 										Cherry
 									</p>
@@ -133,8 +135,8 @@ export const Footer = () => {
 											</Link>
 										</li>
 									</ul>
-								</div> */}
-								{/* <div>
+								</div>
+								<div>
 									<p className="font-semibold tracking-wide text-brand-byellow">
 										Apples
 									</p>
@@ -180,8 +182,8 @@ export const Footer = () => {
 											</Link>
 										</li>
 									</ul>
-								</div> */}
-								{/* <div>
+								</div>
+								<div>
 									<p className="font-semibold tracking-wide text-brand-byellow">
 										Business
 									</p>
@@ -219,12 +221,12 @@ export const Footer = () => {
 											</Link>
 										</li>
 									</ul>
-								</div> */}
+								</div>
 							</div>
 						</div>
 						<div className="flex flex-col justify-between pt-5 pb-10 border-t border-brand-byellow sm:flex-row">
 							<p className="text-sm text-gray-100">
-								{/* © Copyright 2022 Byron Lewis. All rights reserved. */}
+								© Copyright 2022 Byron Lewis. All rights reserved.
 							</p>
 							<div className="flex items-center mt-4 space-x-4 sm:mt-0">
 								<Link
@@ -254,6 +256,49 @@ export const Footer = () => {
 								</Link>
 							</div>
 						</div>
+					</div>
+				</div> */}
+			</section>
+
+			<section>
+				<div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+					<div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+						<div className="sm:col-span-2">
+							<Link
+								href="/home"
+								aria-label="Go home"
+								title="Company"
+								// className="inline-flex items-center"
+							>
+								<Image
+									src="/ByronLewisDotDevLogo.png"
+									alt="logo"
+									width={75}
+									height={75}
+									className="rounded"
+								/>
+							</Link>
+						</div>
+					</div>
+					<div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t border-solid border-grey-600 lg:flex-row">
+						<div className="flex h-6">
+							<RiCreativeCommonsFill className="mt-0.5 " />
+							<RiCreativeCommonsByFill className="mt-0.5 " />
+							<RiCreativeCommonsSaFill className="mt-0.5 " />
+							<p className="pl-2 text-sm text-gray-600">
+								Creative Commons 2023
+							</p>
+						</div>
+						<ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+							<li>
+								<Link
+									href="/"
+									className="text-sm text-gray-600 transition-colors duration-300 hover:text-brand-bred"
+								>
+									Contact
+								</Link>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>

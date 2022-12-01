@@ -21,46 +21,42 @@ export const Nav = () => {
 					</li>
 					<li>
 						<Link
-							href="/portfolio"
-							aria-label="Portfolio"
-							title="Portfolio"
+							href="/projects"
+							aria-label="projects"
+							title="projects"
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
-							Portfolio
+							Projects
 						</Link>
 					</li>
 					<li>
 						<Link
-							// href="/resume.pdf"
-							href="/resume"
+							href="/resume.pdf"
 							aria-label="Resumé"
 							title="Resumé"
+							target={"_blank"}
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
 							Resumé
 						</Link>
 					</li>
 				</ul>
-				{/* <Link
-					href="/"
-					aria-label="ByronLewisDotDev"
-					title="ByronLewisDotDev"
-					className="inline-flex items-center"
-				> */}
-				<Image
-					src="/ByronLewisDotDevLogo.png"
-					alt="Logo"
-					width={75}
-					height={55}
-					className="rounded"
-				/>
-				{/* </Link> */}
+				<Link href="/home" aria-label="Home" title="Home">
+					<Image
+						src="/ByronLewisDotDevLogo.png"
+						alt="Logo"
+						width={75}
+						height={55}
+						className="rounded"
+					/>
+				</Link>
 				<ul className="flex items-center hidden space-x-8 lg:flex">
 					<li>
 						<Link
-							href="/https://github.com/BLewisDesDev"
+							href="https://github.com/BLewisDesDev"
 							aria-label="Github"
 							title="Github"
+							target={"_blank"}
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
 							Github
@@ -68,9 +64,10 @@ export const Nav = () => {
 					</li>
 					<li>
 						<Link
-							href="/https://www.linkedin.com/in/byron-lewis-979474158/"
+							href="https://www.linkedin.com/in/byron-lewis-979474158/"
 							aria-label="LinkedIn"
 							title="LinkedIn"
+							target={"_blank"}
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
 							LinkedIn
@@ -114,12 +111,12 @@ export const Nav = () => {
 							<div className="p-5 bg-white border rounded shadow-sm">
 								<div className="flex items-center justify-between mb-4">
 									<div>
-										<Link
+										{/* <Link
 											href="/"
 											aria-label="ByronLewisDotDev"
 											title="ByronLewisDotDev"
 											className="inline-flex items-center"
-										></Link>
+										></Link> */}
 									</div>
 									<div>
 										<button
@@ -141,7 +138,7 @@ export const Nav = () => {
 									<ul className="space-y-4">
 										<li>
 											<Link
-												href="/"
+												href="/aboutMe"
 												aria-label="About Me"
 												title="About Me"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
@@ -151,17 +148,17 @@ export const Nav = () => {
 										</li>
 										<li>
 											<Link
-												href="/"
-												aria-label="Portfolio"
-												title="Portfolio"
+												href="/projects"
+												aria-label="Projects"
+												title="Projects"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 											>
-												Portfolio
+												Projects
 											</Link>
 										</li>
 										<li>
 											<Link
-												href="/"
+												href="/resume.pdf"
 												aria-label="Resumé"
 												title="Resumé"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
@@ -171,7 +168,7 @@ export const Nav = () => {
 										</li>
 										<li>
 											<Link
-												href="/"
+												href="https://github.com/BLewisDesDev"
 												aria-label="Github"
 												title="Github"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
@@ -181,7 +178,7 @@ export const Nav = () => {
 										</li>
 										<li>
 											<Link
-												href="/"
+												href="https://www.linkedin.com/in/byron-lewis-979474158/"
 												aria-label="LinkedIn"
 												title="LinkedIn"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
@@ -191,7 +188,7 @@ export const Nav = () => {
 										</li>
 										<li>
 											<Link
-												href="/"
+												href="/contact"
 												className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-brand-bred hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
 												aria-label="Contact"
 												title="Contact"

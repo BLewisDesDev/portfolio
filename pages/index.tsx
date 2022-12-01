@@ -21,15 +21,15 @@ export default function Home() {
 			</Head>
 
 			<>
-				<div className="flex justify-center w-full h-screen">
-					<div className="relative z-0">
-						{/* Gif div */}
-						<motion.div
-							initial={{ opacity: 1 }}
-							animate={{ opacity: 0 }}
-							transition={{ duration: 0.2, delay: 2.6 }}
-						>
-							<Suspense fallback={<p>Loading...</p>}>
+				<Suspense fallback={<p>Loading...</p>}>
+					<div className="flex justify-center w-full h-screen">
+						<div className="relative z-0">
+							{/* Gif div */}
+							<motion.div
+								initial={{ opacity: 1 }}
+								animate={{ opacity: 0 }}
+								transition={{ duration: 0.2, delay: 2.6 }}
+							>
 								<Image
 									src={gif}
 									alt="gif"
@@ -37,10 +37,10 @@ export default function Home() {
 									onLoadingComplete={(e) => redirect()}
 									className="z-0 object-cover w-full h-screen"
 								/>
-							</Suspense>
-						</motion.div>
+							</motion.div>
+						</div>
 					</div>
-				</div>
+				</Suspense>
 			</>
 		</>
 	);

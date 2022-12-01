@@ -1,5 +1,8 @@
+import Head from "next/head";
 import { useState } from "react";
 import { ProjectInfo } from "../components/ProjectInfo";
+import { Nav } from "../components/Nav";
+import { Footer } from "../components/Footer";
 
 interface Project {
 	projectID: number;
@@ -61,6 +64,12 @@ export default function Projects() {
 
 	return (
 		<>
+			<Head>
+				<title>Projects</title>
+				<meta name="description" content="Projects Page" />
+				<link rel="icon" href="/ByronLewisDotDevLogo.png" />
+			</Head>
+			<Nav />
 			<h1>Projects Pages</h1>
 			{projectList.map((project: Project) => (
 				<ProjectInfo
@@ -74,6 +83,7 @@ export default function Projects() {
 					technologies={project.technologies}
 				/>
 			))}
+			<Footer />
 		</>
 	);
 }

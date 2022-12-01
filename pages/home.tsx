@@ -20,7 +20,7 @@ export default function Home() {
 					<link rel="icon" href="/ByronLewisDotDevLogo.png" />
 				</Head>
 
-				<main>
+				<section>
 					<div className="flex justify-center w-full h-screen">
 						<div className="relative z-0">
 							{/* Gif div */}
@@ -53,7 +53,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-				</main>
+				</section>
 			</div>
 		</>
 	);

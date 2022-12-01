@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
 import Link from "next/link";
 
 export const Portfolio = () => {
 	const { ref, inView, entry } = useInView({
-		threshold: 0,
+		threshold: 0.8,
 	});
 	return (
 		<>
@@ -102,11 +103,11 @@ export const Portfolio = () => {
 					</div>
 					<div className="text-center">
 						<Link
-							href="https://github.com/BLewisDesDev"
+							href="/projects"
 							aria-label=""
 							className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-brand-bred"
 						>
-							View GitHub
+							View Projects
 							<svg
 								className="inline-block w-3 ml-2"
 								fill="currentColor"
