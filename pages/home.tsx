@@ -13,48 +13,45 @@ export default function Home() {
 	useEffect(() => {}, []);
 	return (
 		<>
-			<div>
-				<Head>
-					<title>Byron-Lewis-Dot-Dev</title>
-					<meta name="description" content="Portoflio Site by by Byron Lewis" />
-					<link rel="icon" href="/ByronLewisDotDevLogo.png" />
-				</Head>
+			<Head>
+				<title>Byron-Lewis-Dot-Dev</title>
+				<meta name="description" content="Portoflio Site by by Byron Lewis" />
+				<link rel="icon" href="/ByronLewisDotDevLogo.png" />
+			</Head>
+			<section>
+				<div className="flex justify-center w-full h-screen">
+					<div className="relative z-0">
+						{/* Gif div */}
+						<motion.div initial={{ opacity: 0 }}>
+							<Suspense fallback={<p>Loading...</p>}>
+								<Image
+									src={gif}
+									alt="gif"
+									quality={100}
+									onLoadingComplete={(e) => setisIntroReady(true)}
+									className="z-0 object-cover w-full h-screen"
+								/>
+							</Suspense>
+						</motion.div>
 
-				<section>
-					<div className="flex justify-center w-full h-screen">
-						<div className="relative z-0">
-							{/* Gif div */}
-							<motion.div initial={{ opacity: 0 }}>
-								<Suspense fallback={<p>Loading...</p>}>
-									<Image
-										src={gif}
-										alt="gif"
-										quality={100}
-										onLoadingComplete={(e) => setisIntroReady(true)}
-										className="z-0 object-cover w-full h-screen"
-									/>
-								</Suspense>
-							</motion.div>
-
-							{/* Content */}
-							<div className="absolute inset-0 z-10">
-								{isIntroReady && (
-									<motion.div
-										initial={{ opacity: 0 }}
-										animate={{ opacity: 1 }}
-										transition={{ duration: 0.5 }}
-									>
-										<Nav />
-										<Hero />
-										<Portfolio />
-										<Footer />
-									</motion.div>
-								)}
-							</div>
+						{/* Content */}
+						<div className="absolute inset-0 z-10">
+							{isIntroReady && (
+								<motion.div
+									initial={{ opacity: 0 }}
+									animate={{ opacity: 1 }}
+									transition={{ duration: 0.5 }}
+								>
+									<Nav />
+									<Hero />
+									<Portfolio />
+									<Footer />
+								</motion.div>
+							)}
 						</div>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
 		</>
 	);
 }
