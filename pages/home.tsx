@@ -7,6 +7,7 @@ import { Hero } from "../components/Hero";
 import { Portfolio } from "../components/Portfolio";
 import { Footer } from "../components/Footer";
 import gif from "../public/PortfolioSite.gif";
+import { Feature } from "../components/Feature";
 
 export default function Home() {
 	const [isIntroReady, setisIntroReady] = useState(false);
@@ -45,6 +46,7 @@ export default function Home() {
 									<Nav />
 									<Hero />
 									<Portfolio />
+									{/* <Feature /> */}
 									<Footer />
 								</motion.div>
 							)}

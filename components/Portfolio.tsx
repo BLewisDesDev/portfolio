@@ -13,7 +13,7 @@ export const Portfolio = () => {
 	return (
 		<>
 			<section>
-				<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+				<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-44">
 					<div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
 						<h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
 							<span className="inline-block mb-1 sm:mb-4">
@@ -54,7 +54,7 @@ export const Portfolio = () => {
 							ref={ref}
 							initial={{ opacity: 0, y: -20 }}
 							animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
-							transition={{ duration: 0.5, delay: 0.2 }}
+							transition={{ duration: 0.5, delay: 0.1 }}
 						>
 							<Link href="/projects" aria-label="View Item">
 								<div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
@@ -66,10 +66,9 @@ export const Portfolio = () => {
 									<div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
 										<p className="mb-4 text-lg font-bold text-gray-100">OSLi</p>
 										<p className="text-sm tracking-wide text-gray-300">
-											An open source sample library used to organise sound files
-											and samples. OSLi will provide a a free alternative to the
-											Splice sample library plugin that can be used with any
-											existing file structure. Plans to extend file type
+											An open source sample library. OSLi will provide a
+											platform agnostic alternative to the subscription
+											services.
 										</p>
 									</div>
 								</div>
@@ -79,7 +78,7 @@ export const Portfolio = () => {
 							ref={ref}
 							initial={{ opacity: 0, y: -20 }}
 							animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
-							transition={{ duration: 0.5, delay: 0.4 }}
+							transition={{ duration: 0.5, delay: 0.2 }}
 						>
 							<Link href="/projects" aria-label="View Item">
 								<div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
@@ -103,7 +102,7 @@ export const Portfolio = () => {
 							ref={ref}
 							initial={{ opacity: 0, y: -20 }}
 							animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
-							transition={{ duration: 0.5, delay: 0.6 }}
+							transition={{ duration: 0.5, delay: 0.3 }}
 						>
 							<Link href="/projects" aria-label="View Item">
 								<div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
