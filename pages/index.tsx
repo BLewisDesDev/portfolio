@@ -41,7 +41,7 @@ export default function Home() {
 						initial={{ opacity: 1 }}
 						animate={{ opacity: 0 }}
 						transition={{ duration: 0.2, delay: 2.6 }}
-						className="absolute z-10"
+						className="absolute z-10 w-full h-screen"
 					>
 						<Image
 							src={gif}
