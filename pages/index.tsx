@@ -25,24 +25,23 @@ export default function Home() {
 
 			<>
 				<div className="flex items-center justify-center w-full h-screen">
-					<div className="absolute">
-						<ScaleLoader className="" height={48} width={6} color="#C72C3D" />
-					</div>
-					<div className="z-0">
-						<motion.div
-							initial={{ opacity: 1 }}
-							animate={{ opacity: 0 }}
-							transition={{ duration: 0.2, delay: 2.6 }}
-						>
-							<Image
-								src={gif}
-								alt="gif"
-								quality={100}
-								onLoadingComplete={(e) => redirect()}
-								className="z-0 object-cover w-full h-screen"
-							/>
-						</motion.div>
-					</div>
+					<motion.div
+						initial={{ opacity: 1 }}
+						animate={{ opacity: 0 }}
+						transition={{ duration: 0.2, delay: 2.6 }}
+						className=""
+					>
+						<Image
+							src={gif}
+							alt="gif"
+							quality={100}
+							onLoadingComplete={(e) => redirect()}
+							className="z-10 object-cover w-full h-screen"
+						/>
+						<div className="absolute z-0">
+							<ScaleLoader className="" height={48} width={6} color="#C72C3D" />
+						</div>
+					</motion.div>
 				</div>
 			</>
 		</>
