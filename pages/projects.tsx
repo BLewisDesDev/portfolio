@@ -19,9 +19,9 @@ export default function Projects() {
 	const projectList = [];
 	const ReadyBank: Project = {
 		projectID: 1,
-		title: "readybank",
+		title: "ReadyBank",
 		link: "",
-		imgSrc: "/ReadyBank.png",
+		imgSrc: "/readybank.png",
 		description: "This is a description of ReadyBank",
 		features: ["feature 1", "feature 2", "feature 3"],
 		technologies: ["tech 1", "tech 2", "tech 3"],
@@ -46,9 +46,9 @@ export default function Projects() {
 	};
 	const Deeplayer: Project = {
 		projectID: 4,
-		title: "deeplayer",
+		title: "Deeplayer",
 		link: "",
-		imgSrc: "/Deeplayer.png",
+		imgSrc: "/deeplayer.png",
 		description: "This is a description of Deeplayer",
 		features: ["feature 1", "feature 2", "feature 3"],
 		technologies: ["tech 1", "tech 2", "tech 3"],
