@@ -4,17 +4,23 @@ import Image from "next/image";
 import gif from "../public/PortfolioSite.gif";
 import { useRouter } from "next/router";
 import ScaleLoader from "react-spinners/ScaleLoader";
+import { useEffect } from "react";
 
 export default function Home() {
 	const Router = useRouter();
-	const redirect = () => {
+	const redirect = (time: number) => {
 		setTimeout(() => {
 			Router.push("/home");
-		}, 2600);
+		}, time);
 	};
 	const loading = () => {
 		return <ScaleLoader color="#C72C3D" />;
 	};
+
+	useEffect(() => {
+		redirect(5000);
+	}, []);
+
 	return (
 		<>
 			<Head>
@@ -29,18 +35,28 @@ export default function Home() {
 						initial={{ opacity: 1 }}
 						animate={{ opacity: 0 }}
 						transition={{ duration: 0.2, delay: 2.6 }}
-						className=""
+						className="absolute z-10"
+					>
+						<ScaleLoader
+							className="absolute z-0"
+							height={48}
+							width={6}
+							color="#C72C3D"
+						/>
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 1 }}
+						animate={{ opacity: 0 }}
+						transition={{ duration: 0.2, delay: 2.6 }}
+						className="absolute z-10"
 					>
 						<Image
 							src={gif}
 							alt="gif"
 							quality={100}
-							onLoadingComplete={(e) => redirect()}
-							className="z-10 object-cover w-full h-screen"
+							onLoadingComplete={(e) => redirect(2600)}
+							className="w-full h-screen"
 						/>
-						<div className="absolute z-0">
-							<ScaleLoader className="" height={48} width={6} color="#C72C3D" />
-						</div>
 					</motion.div>
 				</div>
 			</>

@@ -34,7 +34,6 @@ export const Nav = () => {
 							href="/resume.pdf"
 							aria-label="Resumé"
 							title="Resumé"
-							target={"_blank"}
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
 							Resumé
@@ -56,7 +55,6 @@ export const Nav = () => {
 							href="https://github.com/BLewisDesDev"
 							aria-label="Github"
 							title="Github"
-							target={"_blank"}
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
 							Github
@@ -67,7 +65,6 @@ export const Nav = () => {
 							href="https://www.linkedin.com/in/byron-lewis-979474158/"
 							aria-label="LinkedIn"
 							title="LinkedIn"
-							target={"_blank"}
 							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 						>
 							LinkedIn
