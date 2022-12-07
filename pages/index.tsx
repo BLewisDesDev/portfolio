@@ -31,19 +31,12 @@ export default function Home() {
 
 			<>
 				<div className="flex items-center justify-center w-full h-screen">
-					<motion.div
-						initial={{ opacity: 1 }}
-						animate={{ opacity: 0 }}
-						transition={{ duration: 0.2, delay: 2.6 }}
-						className="absolute z-10"
-					>
-						<ScaleLoader
-							className="absolute z-0"
-							height={48}
-							width={6}
-							color="#C72C3D"
-						/>
-					</motion.div>
+					<ScaleLoader
+						className="absolute z-0"
+						height={48}
+						width={6}
+						color="#C72C3D"
+					/>
 					<motion.div
 						initial={{ opacity: 1 }}
 						animate={{ opacity: 0 }}
