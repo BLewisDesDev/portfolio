@@ -18,7 +18,7 @@ export default function Home() {
 	};
 
 	useEffect(() => {
-		redirect(5000);
+		redirect(4000);
 	}, []);
 
 	return (
@@ -47,8 +47,8 @@ export default function Home() {
 							src={gif}
 							alt="gif"
 							quality={100}
-							onLoadingComplete={(e) => redirect(2600)}
-							className="w-full h-screen"
+							onLoadingComplete={(e) => redirect(2800)}
+							className="object-cover w-full h-screen"
 						/>
 					</motion.div>
 				</div>

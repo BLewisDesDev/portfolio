@@ -1,12 +1,11 @@
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import Link from "next/link";
-
 export const Portfolio = () => {
 	const { ref, inView } = useInView({
-		threshold: 0.3,
+		// threshold: 0,
 		triggerOnce: true,
 	});
 
