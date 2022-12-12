@@ -32,7 +32,6 @@ export const Nav = (props: NavProps) => {
 								title="projects"
 								className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-bred"
 							>
-								{" "}
 								Projects
 							</Link>
 						</li>

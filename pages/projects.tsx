@@ -2,7 +2,6 @@ import Head from "next/head";
 import { ProjectInfo } from "../components/ProjectInfo";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
-import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 interface Project {
@@ -79,16 +78,21 @@ export default function Projects() {
 
 			{projectList.map((project: Project, index: number) => (
 				<>
-					<ProjectInfo
-						key={project.projectID}
-						projectID={project.projectID}
-						title={project.title}
-						link={project.link}
-						imgSrc={project.imgSrc}
-						description={project.description}
-						features={project.features}
-						technologies={project.technologies}
-					/>
+					<div className="my-16" id={project.title}>
+						<ProjectInfo
+							key={project.projectID}
+							projectID={project.projectID}
+							title={project.title}
+							link={project.link}
+							imgSrc={project.imgSrc}
+							description={project.description}
+							features={project.features}
+							technologies={project.technologies}
+						/>
+					</div>
+					<div className="relative flex items-center justify-center py-5 ">
+						<div className="w-1/2 border-t border-gray-200 "></div>
+					</div>
 				</>
 			))}
 

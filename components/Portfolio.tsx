@@ -29,7 +29,7 @@ export const Portfolio = () => {
 							animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
 							transition={{ duration: 0.5 }}
 						>
-							<Link href="/projects" aria-label="View Item">
+							<Link href="/projects#ReadyBank" aria-label="View Item">
 								<div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
 									<img
 										className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -55,7 +55,7 @@ export const Portfolio = () => {
 							animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
 							transition={{ duration: 0.5, delay: 0.1 }}
 						>
-							<Link href="/projects" aria-label="View Item">
+							<Link href="/projects#OSLi" aria-label="View Item">
 								<div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
 									<img
 										className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -79,7 +79,7 @@ export const Portfolio = () => {
 							animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
 							transition={{ duration: 0.5, delay: 0.2 }}
 						>
-							<Link href="/projects" aria-label="View Item">
+							<Link href="/projects#TalentoTotal" aria-label="View Item">
 								<div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
 									<img
 										className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -103,7 +103,7 @@ export const Portfolio = () => {
 							animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
 							transition={{ duration: 0.5, delay: 0.3 }}
 						>
-							<Link href="/projects" aria-label="View Item">
+							<Link href="/projects#Deeplayer" aria-label="View Item">
 								<div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
 									<img
 										className="object-cover w-full h-56 md:h-64 xl:h-80"

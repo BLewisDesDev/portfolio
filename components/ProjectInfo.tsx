@@ -91,7 +91,7 @@ export const ProjectInfo = ({
 									</ul>
 								</div>
 							</div>
-							<div>
+							<div className="">
 								<Image
 									className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
 									src={imgSrc}
