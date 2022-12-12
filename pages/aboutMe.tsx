@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Nav } from "../components/Nav";
+import { NavDecor } from "../components/NavDecor";
 import { Footer } from "../components/Footer";
 import { Feature2 } from "../components/Feature2";
 import { useRouter } from "next/router";
@@ -18,7 +18,7 @@ export default function AboutMe() {
 				<meta name="description" content="About Me Page" />
 				<link rel="icon" href="/ByronLewisDotDevLogo.png" />
 			</Head>
-			<Nav scrollToContact={redirect} />
+			<NavDecor scrollToContact={redirect} />
 			<Feature2 />
 			<Footer />
 		</>
