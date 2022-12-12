@@ -2,6 +2,8 @@ import Head from "next/head";
 import { ProjectInfo } from "../components/ProjectInfo";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 interface Project {
 	projectID: number;
@@ -13,8 +15,7 @@ interface Project {
 	technologies: string[];
 }
 
-//Dummy data for projects. Will come from database in the future.
-
+//Data for projects. Will come from database in the future.
 export default function Projects() {
 	const projectList = [];
 	const ReadyBank: Project = {
@@ -22,9 +23,10 @@ export default function Projects() {
 		title: "ReadyBank",
 		link: "",
 		imgSrc: "/readybank.png",
-		description: "This is a description of ReadyBank",
-		features: ["feature 1", "feature 2", "feature 3"],
-		technologies: ["tech 1", "tech 2", "tech 3"],
+		description:
+			"Ready Bank is a social media platform with added Payments and Banking features. Created for a client as part of the final project for the Professional Experience capstone unit at University of Western Sydney.",
+		features: ["Custom Auth", "Rest API", "Payments"],
+		technologies: ["MERN", "Express.js", "MongoDB"],
 	};
 	const TalentoTotal: Project = {
 		projectID: 2,
@@ -32,8 +34,8 @@ export default function Projects() {
 		link: "",
 		imgSrc: "/TalentoTotoalLogo.jpg",
 		description: "This is a description of Talento Total",
-		features: ["feature 1", "feature 2", "feature 3"],
-		technologies: ["tech 1", "tech 2", "tech 3"],
+		features: ["Tailwind", "Typescript", "Rest API"],
+		technologies: ["Next.js", "Prisma/SQL", "Docker"],
 	};
 	const OSLi: Project = {
 		projectID: 3,
@@ -41,23 +43,30 @@ export default function Projects() {
 		link: "",
 		imgSrc: "/osli.png",
 		description: "This is a description of OSLi",
-		features: ["feature 1", "feature 2", "feature 3"],
-		technologies: ["tech 1", "tech 2", "tech 3"],
+		features: ["Electron.js/React", "Typescript", "OpenSource"],
+		technologies: ["React", "DaisyUI/Tailwind", "Node.js"],
 	};
 	const Deeplayer: Project = {
 		projectID: 4,
 		title: "Deeplayer",
 		link: "",
 		imgSrc: "/deeplayer.png",
-		description: "This is a description of Deeplayer",
-		features: ["feature 1", "feature 2", "feature 3"],
-		technologies: ["tech 1", "tech 2", "tech 3"],
+		description:
+			"Deeplayer is an application in development that uses an LSTM/Diffusion Model to generate novel MIDI patterns based on a Custom Training Set of popular songs.",
+		features: ["Custom Training Set", "Closed Source", "DAW Integration"],
+		technologies: ["LSTM/Diffusion Model", "TensorFlow", "Pytorch"],
 	};
 
 	projectList.push(ReadyBank);
 	projectList.push(TalentoTotal);
 	projectList.push(OSLi);
 	projectList.push(Deeplayer);
+
+	const router = useRouter();
+
+	const redirect = () => {
+		router.push("/home#contact");
+	};
 
 	return (
 		<>
@@ -66,7 +75,7 @@ export default function Projects() {
 				<meta name="description" content="Projects Page" />
 				<link rel="icon" href="/ByronLewisDotDevLogo.png" />
 			</Head>
-			<Nav />
+			<Nav scrollToContact={redirect} />
 
 			{projectList.map((project: Project, index: number) => (
 				<>

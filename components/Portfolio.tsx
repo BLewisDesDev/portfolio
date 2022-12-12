@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 export const Portfolio = () => {
 	const { ref, inView } = useInView({
-		// threshold: 0,
+		threshold: 0,
 		triggerOnce: true,
 	});
 

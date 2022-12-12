@@ -1,15 +1,19 @@
-// import { useState, useEffect, Suspense } from "react";
 import { motion } from "framer-motion";
 import Head from "next/head";
-// import Image from "next/image";
 import { Nav } from "../components/Nav";
 import { Hero } from "../components/Hero";
 import { Portfolio } from "../components/Portfolio";
 import { Footer } from "../components/Footer";
 import { Feature } from "../components/Feature";
-import { ScaleLoader } from "react-spinners";
+import { useRef } from "react";
 
 export default function Home() {
+	const myRef = useRef<null | HTMLDivElement>(null);
+	const executeScroll = () => {
+		if (myRef.current != null) {
+			myRef.current.scrollIntoView({ behavior: "smooth" });
+		}
+	};
 	return (
 		<>
 			<Head>
@@ -25,10 +29,12 @@ export default function Home() {
 						animate={{ opacity: 1 }}
 						transition={{ duration: 0.5 }}
 					>
-						<Nav />
+						<Nav scrollToContact={executeScroll} />
 						<Hero />
 						<Portfolio />
-						<Feature />
+						<div id="contact" ref={myRef}>
+							<Feature />
+						</div>
 						<Footer />
 					</motion.div>
 				</div>

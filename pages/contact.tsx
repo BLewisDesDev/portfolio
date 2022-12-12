@@ -7,7 +7,7 @@ export default function Contact() {
 	return (
 		<>
 			<Head>
-				<title>Contact</title>
+				<title>Thank you</title>
 				<meta name="description" content="Contact Page" />
 				<link rel="icon" href="/ByronLewisDotDevLogo.png" />
 			</Head>
