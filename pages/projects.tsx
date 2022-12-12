@@ -78,7 +78,7 @@ export default function Projects() {
 
 			{projectList.map((project: Project, index: number) => (
 				<>
-					<div className="my-16" id={project.title}>
+					<div className="lg:my-16 md:my-12 sm:my-4" id={project.title}>
 						<ProjectInfo
 							key={project.projectID}
 							projectID={project.projectID}
