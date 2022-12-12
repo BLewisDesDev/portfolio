@@ -29,13 +29,6 @@ export const ProjectInfo = ({
 								<div className="max-w-xl mb-6">
 									<h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
 										{title}
-										<br className="hidden md:block" />
-										<span className="relative px-1">
-											<div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-brand-bgreen" />
-											<span className="relative inline-block text-brand-bred">
-												{title}
-											</span>
-										</span>
 									</h2>
 									<p className="text-base text-gray-700 md:text-lg">
 										{description}
@@ -120,13 +113,6 @@ export const ProjectInfo = ({
 								<div className="max-w-xl mb-6">
 									<h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
 										{title}
-										<br className="hidden md:block" />
-										<span className="relative px-1">
-											<div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-brand-bgreen" />
-											<span className="relative inline-block text-brand-bred">
-												{title}
-											</span>
-										</span>
 									</h2>
 									<p className="text-base text-gray-700 md:text-lg">
 										{description}
