@@ -1,12 +1,52 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
-export const Feature = () => {
+export const Contact = () => {
+	const [formData, setFormData] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
+	const { name, email, message } = formData;
+	const [responseError, setResponseError] = useState(false);
+
+	const sendEmail = async (e: any) => {
+		e.preventDefault();
+		console.log("formData", formData);
+		const rawResponse = await fetch("api/contact", {
+			method: "POST",
+			headers: {
+				Accept: "application/json",
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(formData),
+		});
+
+		const response = await rawResponse.json();
+
+		if (response.success === true) {
+			setResponseError(false);
+			setFormData({
+				name: "",
+				email: "",
+				message: "",
+			});
+			toast.success("Message sent!");
+		}
+		if (response.success === false) {
+			toast.error(response.errors[0].message);
+			setResponseError(true);
+		}
+	};
+
 	const { ref, inView } = useInView({
 		threshold: 0.2,
 		triggerOnce: true,
 	});
+
 	return (
 		<div className="relative">
 			<div className="relative bg-brand-bblue700">
@@ -72,6 +112,10 @@ export const Feature = () => {
 											className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-brand-bred focus:outline-none focus:shadow-outline"
 											id="name"
 											name="name"
+											value={name}
+											onChange={(e) =>
+												setFormData({ ...formData, name: e.target.value })
+											}
 										/>
 									</div>
 									<div className="mb-1 sm:mb-2">
@@ -88,6 +132,10 @@ export const Feature = () => {
 											className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-brand-bred focus:outline-none focus:shadow-outline"
 											id="email"
 											name="email"
+											value={email}
+											onChange={(e) =>
+												setFormData({ ...formData, email: e.target.value })
+											}
 										/>
 									</div>
 									<div className="mb-1 sm:mb-2">
@@ -104,12 +152,17 @@ export const Feature = () => {
 											className="flex-grow w-full h-32 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-brand-bred focus:outline-none focus:shadow-outline"
 											id="message"
 											name="message"
+											value={message}
+											onChange={(e) =>
+												setFormData({ ...formData, message: e.target.value })
+											}
 										/>
 									</div>
 									<div className="mt-4 mb-2 sm:mb-4">
 										<button
 											type="submit"
 											className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-brand-bred hover:bg-brand-bred600 focus:shadow-outline focus:outline-none"
+											onClick={sendEmail}
 										>
 											Submit
 										</button>

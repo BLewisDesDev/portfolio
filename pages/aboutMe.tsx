@@ -1,9 +1,10 @@
 import Head from "next/head";
-import { NavDecor } from "../components/NavDecor";
 import { Footer } from "../components/Footer";
-import { Feature2 } from "../components/Feature2";
+import { ProfileCard } from "../components/ProfileCard";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import { Nav } from "../components/Nav";
+import MyStory from "../components/MyStory";
 
 export default function AboutMe() {
 	const router = useRouter();
@@ -18,9 +19,12 @@ export default function AboutMe() {
 				<meta name="description" content="About Me Page" />
 				<link rel="icon" href="/ByronLewisDotDevLogo.png" />
 			</Head>
-			<NavDecor scrollToContact={redirect} />
-			<Feature2 />
-			<Footer />
+			<div className="h-screen bg-gradient-to-r from-brand-bred100 via-brand-bblue100 to-brand-byellow100">
+				<Nav scrollToContact={redirect} />
+				<ProfileCard />
+				<MyStory />
+				<Footer />
+			</div>
 		</>
 	);
 }

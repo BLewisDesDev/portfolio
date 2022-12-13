@@ -4,7 +4,7 @@ import { Nav } from "../components/Nav";
 import { Hero } from "../components/Hero";
 import { Portfolio } from "../components/Portfolio";
 import { Footer } from "../components/Footer";
-import { Feature } from "../components/Feature";
+import { Contact } from "../components/Contact";
 import { useRef } from "react";
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
 						<Hero />
 						<Portfolio />
 						<div id="contact" ref={myRef}>
-							<Feature />
+							<Contact />
 						</div>
 						<Footer />
 					</motion.div>
