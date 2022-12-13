@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { FaGithub, FaLinkedinIn, FaMailBulk } from "react-icons/fa";
 
 export const ProfileCard = () => {
 	return (
@@ -12,7 +14,7 @@ export const ProfileCard = () => {
 									<Image
 										alt="profileImage"
 										src="/MeArmsFolded.png"
-										className="h-auto ml-0.5 -m-28 align-middle border-none rounded-full"
+										className="h-auto ml-0.5 -m-28 align-middle border-none rounded-full shadow-xl"
 										width={350}
 										height={350}
 									/>
@@ -22,21 +24,39 @@ export const ProfileCard = () => {
 								<div className="flex justify-center py-4 pt-8 lg:pt-16">
 									<div className="p-3 m-4 text-center">
 										<span className="block text-xl font-bold tracking-wide uppercase text-blueGray-600">
-											X
+											<Link
+												href="https://github.com/BLewisDesDev"
+												aria-label="Github"
+												title="Github"
+											>
+												<FaGithub size={28} />
+											</Link>
 										</span>
-										<span className="text-sm text-blueGray-400">X</span>
+										{/* <span className="text-sm text-blueGray-400">Github</span> */}
 									</div>
 									<div className="p-3 m-4 text-center">
 										<span className="block text-xl font-bold tracking-wide uppercase text-blueGray-600">
-											x
+											<Link
+												href="https://www.linkedin.com/in/byron-lewis-979474158/"
+												aria-label="LinkedIn"
+												title="LinkedIn"
+											>
+												<FaLinkedinIn size={28} />
+											</Link>
 										</span>
-										<span className="text-sm text-blueGray-400">x</span>
+										{/* <span className="text-sm text-blueGray-400">Linked In</span> */}
 									</div>
 									<div className="p-3 text-center lg:m-4">
 										<span className="block text-xl font-bold tracking-wide uppercase text-blueGray-600">
-											X
+											<Link
+												href="/home#contact"
+												aria-label="Github"
+												title="Github"
+											>
+												<FaMailBulk size={28} />
+											</Link>
 										</span>
-										<span className="text-sm text-blueGray-400">X</span>
+										{/* <span className="text-sm text-blueGray-400">Email</span> */}
 									</div>
 								</div>
 							</div>
