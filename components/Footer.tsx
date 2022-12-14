@@ -277,7 +277,7 @@ export const Footer = () => {
 					</div>
 					<div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t border-solid border-grey-600 lg:flex-row">
 						<div className="flex h-6">
-							<p className="pl-2 text-sm text-gray-600">Some Rights Reserved</p>
+							<p className="text-sm text-gray-600 ">Some Rights Reserved</p>
 						</div>
 						<ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
 							<li>

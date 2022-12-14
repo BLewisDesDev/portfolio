@@ -1,6 +1,4 @@
-import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 export const Hero = () => {
@@ -55,10 +53,10 @@ export const Hero = () => {
 						</p>
 						<div className="flex items-center">
 							<Link
-								href="/projects"
+								href="/aboutMe"
 								className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-brand-bred hover:bg-brand-bred600 focus:shadow-outline focus:outline-none"
 							>
-								Projects
+								About Me
 							</Link>
 							<Link
 								href="/resume.pdf"

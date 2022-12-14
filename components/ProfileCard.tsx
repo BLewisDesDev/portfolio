@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaLinkedinIn, FaMailBulk } from "react-icons/fa";
+import {
+	FaGithub,
+	FaLinkedinIn,
+	FaEnvelope,
+	FaMapPin,
+	FaUniversity,
+	FaBriefcase,
+} from "react-icons/fa";
 
 export const ProfileCard = () => {
 	return (
@@ -20,7 +27,7 @@ export const ProfileCard = () => {
 									/>
 								</div>
 							</div>
-							<div className="w-full px-4 mt-20 text-center">
+							<div className="w-full px-4 mt-16 text-center">
 								<div className="flex justify-center py-4 pt-8 lg:pt-16">
 									<div className="p-3 m-4 text-center">
 										<span className="block text-xl font-bold tracking-wide uppercase text-blueGray-600">
@@ -32,7 +39,6 @@ export const ProfileCard = () => {
 												<FaGithub size={28} />
 											</Link>
 										</span>
-										{/* <span className="text-sm text-blueGray-400">Github</span> */}
 									</div>
 									<div className="p-3 m-4 text-center">
 										<span className="block text-xl font-bold tracking-wide uppercase text-blueGray-600">
@@ -44,7 +50,6 @@ export const ProfileCard = () => {
 												<FaLinkedinIn size={28} />
 											</Link>
 										</span>
-										{/* <span className="text-sm text-blueGray-400">Linked In</span> */}
 									</div>
 									<div className="p-3 text-center lg:m-4">
 										<span className="block text-xl font-bold tracking-wide uppercase text-blueGray-600">
@@ -53,10 +58,9 @@ export const ProfileCard = () => {
 												aria-label="Github"
 												title="Github"
 											>
-												<FaMailBulk size={28} />
+												<FaEnvelope size={28} />
 											</Link>
 										</span>
-										{/* <span className="text-sm text-blueGray-400">Email</span> */}
 									</div>
 								</div>
 							</div>
@@ -65,16 +69,22 @@ export const ProfileCard = () => {
 							<h3 className="mb-2 text-xl font-semibold leading-normal text-blueGray-700">
 								Byron Lewis
 							</h3>
-							<div className="mt-0 mb-2 text-sm font-bold leading-normal uppercase text-blueGray-400">
-								<i className="mr-2 text-lg fas fa-map-marker-alt text-blueGray-400"></i>
+							<div className="flex justify-center mt-0 mb-2 text-sm font-bold leading-normal uppercase text-blueGray-400">
+								<i className="mr-2 text-lg fas fa-map-marker-alt text-blueGray-400">
+									<FaMapPin />
+								</i>
 								Sydney, Australia
 							</div>
-							<div className="mt-10 mb-2 text-blueGray-600">
-								<i className="mr-2 text-lg fas fa-briefcase text-blueGray-400"></i>
+							<div className="flex justify-center mt-10 mb-2 text-blueGray-600">
+								<i className="mr-2 text-lg fas text-blueGray-400">
+									<FaBriefcase />
+								</i>
 								Software Engineer, Web Developer
 							</div>
-							<div className="mb-2 text-blueGray-600">
-								<i className="mr-2 text-lg fas fa-university text-blueGray-400"></i>
+							<div className="flex justify-center mb-2 text-blueGray-600">
+								<i className="mr-2 text-lg fas text-blueGray-400">
+									<FaUniversity />
+								</i>
 								Western Sydney University
 							</div>
 						</div>
@@ -87,17 +97,11 @@ export const ProfileCard = () => {
 								<div className="w-full px-4 lg:w-9/12">
 									<p className="mb-4 text-lg leading-relaxed text-blueGray-700">
 										Byron is a software engineer and web developer based in
-										Sydney, Australia. Has recently completed a Bachelor of
+										Sydney, Australia. He has recently completed a Bachelor of
 										Computer Science at Western Sydney University. He has a
 										passion for web development and is always looking to learn
 										new technologies.
 									</p>
-									{/* <a
-										href="javascript:void(0);"
-										className="font-normal text-pink-500"
-									>
-										Show more
-									</a> */}
 								</div>
 							</div>
 						</div>
