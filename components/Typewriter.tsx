@@ -9,8 +9,8 @@ const Typewriter = () => {
 	});
 	return (
 		<>
-			<div className="flex items-center justify-center py-28">
-				<h1 className="text-6xl">
+			<div className="flex items-center justify-center py-28 h-33">
+				<h1 className="text-5xl">
 					<strong>
 						{text}
 						<Cursor cursorColor="#C72C3D" />
